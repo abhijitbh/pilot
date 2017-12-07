@@ -55,11 +55,11 @@
                 <!--Links-->
                 <ul class="nav navbar-nav">
                     <!-- <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/codingo-me/laravel-social-email-authentication" target="_blank"><i class="fa fa-download"></i>  Download</a> -->
-                    </li>
-                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/codingo-me/laravel-social-email-authentication" target="_blank"><i class="fa fa-download"></i>  Download</a> 
+                    </li> -->
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('public.home')  }}"><i class="fa fa-home"></i> Home</a>
-                    </li>
+                    </li> -->
                     @if(!Auth::check())
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('login') }}"><i class="fa fa-sign-in"></i> Login</a>
@@ -78,7 +78,7 @@
                 </ul>
 
                 <!--Navbar icons-->
-                <ul class="nav navbar-nav nav-flex-icons">
+                <!-- <ul class="nav navbar-nav nav-flex-icons">
                     <li class="nav-item">
                         <a href="https://www.facebook.com/codingo.me/" class="nav-link"><i class="fa fa-facebook"></i></a>
                     </li>
@@ -88,7 +88,7 @@
                     <li class="nav-item">
                         <a href="https://plus.google.com/u/2/b/109783202683475265470/collection/wwmLx" class="nav-link"><i class="fa fa-google-plus"></i></a>
                     </li>
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                         <a href="https://github.com/codingo-me" class="nav-link"><i class="fa fa-github"></i></a>
                     </li> -->
                 </ul>
