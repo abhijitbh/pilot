@@ -61,7 +61,7 @@ class LoginController extends Controller
 
             if ( $this->auth->user()->hasRole('user')) {
 
-                return redirect()->route('user.user');
+                return redirect()->route('admin.user');
 
             }
 
