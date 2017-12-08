@@ -11,8 +11,8 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-size:0.8571em;
-    border-color: rgba(255, 255, 255, 0.5);
-    color: #FFFFFF;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                border-color: rgba(255, 255, 255, 0.5);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                color: #FFFFFF;
 }
 .form-signin .form-control:focus {
     z-index: 2;
