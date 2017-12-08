@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.pilot.main')
 
 @section('head')
     {!! HTML::style('/assets/css/reset.css') !!}

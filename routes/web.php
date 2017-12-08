@@ -12,7 +12,7 @@
 */
 
 $s = 'public.';
-Route::get('/',         ['as' => $s . 'home',   'uses' => 'PagesController@getHome']);
+Route::get('/', ['as' => $s . 'home',   'uses' => 'PagesController@getHome']);
 
 $s = 'social.';
 Route::get('/social/redirect/{provider}',   ['as' => $s . 'redirect',   'uses' => 'Auth\SocialController@getSocialRedirect']);

@@ -29,8 +29,22 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    @yield('head')
+@yield('head')
+<style type="text/css">
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+main {
+  width: 100%;
+  height: 100%;
+  background: url({{ asset('assets/img/header.jpg') }}) center center no-repeat;
+  background-size: cover;
+}
 
+
+</style>
 </head>
 
 <body>
@@ -40,78 +54,17 @@
 
 @include('partials.above-navbar-alert')
 
-<!--Navbar-->
-    <nav class="navbar navbar-dark scrolling-navbar mdb-gradient">
-
-        <!-- Collapse button-->
-        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
-            <i class="fa fa-bars"></i></button>
-
-        <div class="container">
-
-            <!--Collapse content-->
-            <div class="collapse navbar-toggleable-xs" id="collapseEx">
-
-                <!--Links-->
-                <ul class="nav navbar-nav">
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/codingo-me/laravel-social-email-authentication" target="_blank"><i class="fa fa-download"></i>  Download</a> 
-                    </li> -->
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="{{ route('public.home')  }}"><i class="fa fa-home"></i> Home</a>
-                    </li> -->
-                    @if(!Auth::check())
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('login') }}"><i class="fa fa-sign-in"></i> Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('register') }}"><i class="fa fa-registered"></i> Register</a>
-                    </li>
-                    @else
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ Auth::user()->homeUrl() }}"><i class="fa fa-user"></i> {{ Auth::user()->first_name }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('logout') }}"><i class="fa fa-sign-out"></i> Logout</a>
-                    </li>
-                    @endif
-                </ul>
-
-                <!--Navbar icons-->
-                <!-- <ul class="nav navbar-nav nav-flex-icons">
-                    <li class="nav-item">
-                        <a href="https://www.facebook.com/codingo.me/" class="nav-link"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://twitter.com/codingo_me" class="nav-link"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://plus.google.com/u/2/b/109783202683475265470/collection/wwmLx" class="nav-link"><i class="fa fa-google-plus"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://github.com/codingo-me" class="nav-link"><i class="fa fa-github"></i></a>
-                    </li> -->
-                </ul>
-
-            </div>
-            <!--/.Collapse content-->
-
-        </div>
-
-    </nav>
-    <!--/.Navbar-->
-
 
 </header>
 <!--/Navigation-->
 
 <main>
-<div class="container">
 
+<div class="container">
     <div style="height: 90px;"></div>
     @yield('content')
-
 </div> <!-- /container -->
+
 </main>
 
 <!-- Bootstrap core JavaScript

@@ -1,7 +1,7 @@
-@extends('layouts.main')
+@extends('layouts.pilot.main')
 
 @section('head')
-    {!! HTML::style('/assets/css/reset-form.css') !!}
+  <!--   {!! HTML::style('/assets/css/reset-form.css') !!} -->
 @stop
 
 @section('content')

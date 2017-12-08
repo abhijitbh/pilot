@@ -9,6 +9,7 @@ class UserController extends Controller
     {
 
         return view('panels.user.home');
+        // return view('panels.user.dashboard');
 
     }
 
